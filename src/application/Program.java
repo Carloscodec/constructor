@@ -14,16 +14,14 @@ public class Program {
 		String name = input.nextLine();
 		System.out.print("Price: $");
 		double price = input.nextDouble();
-		System.out.print("Quantity: ");
-		int quantity = input.nextInt();
 		
-		Product product = new Product(name, price, quantity);
+		Product product = new Product(name, price);
 		
 		System.out.println("Product data:" + product);
 		
 		System.out.println();
 		System.out.print("Enter the amount of products to be added in stock: ");
-		quantity = input.nextInt();
+		int quantity = input.nextInt();
 		product.addProduct(quantity);
 		
 		System.out.println();
